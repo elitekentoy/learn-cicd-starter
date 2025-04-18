@@ -42,8 +42,7 @@ func TestValidAPIKey(t *testing.T) {
 
 	actual, err := GetAPIKey(headers)
 
-	// intentional to test failure of CI
-	if actual != "" || err != nil {
+	if actual == "" || err != nil {
 		t.Errorf("invalid input for testing Valid API Key")
 	}
 }
