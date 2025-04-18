@@ -1,4 +1,4 @@
-![tested]([IMAGE_URL](https://github.com/elitekentoy/learn-cicd-starter/actions/workflows/ci.yml/badge.svg))
+![tested](https://github.com/elitekentoy/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
 
 # learn-cicd-starter (Notely)
 
