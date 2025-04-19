@@ -25,6 +25,9 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+            -   name: Check out code
+                uses: actions/checkout@v4
+
             -   name: Run Go Formatting
                 run: test -z $(go fmt ./...)
 
@@ -32,4 +35,4 @@ jobs:
                 run: go install honnef.co/go/tools/cmd/staticcheck@latest
 
             -   name: Run staticcheck
-                run: test -z $(staticcheck ./...)
+                run: staticcheck ./...
